@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AicomsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorHint">@color/abu</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:statusBarColor">@color/merahmuda</item>
+        <item name="android:buttonTint">@color/black</item>
+    </style>
+
+    <style name="Theme.AicomsApp" parent="Base.Theme.AicomsApp" />
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:buttonTint">@color/radio_button_tint</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+    <style name="SearchViewText" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/abu</item>
+    </style>
+
+    <style name="CustomDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textColor">#000000</item> <!-- White color -->
+    </style>
+    <style name="SpinnerTextStyle">
+    <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

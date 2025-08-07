@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/register_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="26dp" />
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="181dp"
+        android:layout_height="164dp"
+        app:layout_constraintTop_toTopOf="@+id/register_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:text="REGISTER"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/text_register"
+        app:layout_constraintStart_toStartOf="@+id/editTextNama"
+        android:layout_marginTop="10dp" />
+    <!-- Name EditText with Icon -->
+    <customview.EditTextNama
+        android:id="@+id/editTextNama"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="Nama"
+        app:layout_constraintTop_toBottomOf="@+id/labelNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_universal"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNama"
+        app:layout_constraintStart_toStartOf="@+id/editTextNama"
+        android:layout_marginTop="10dp" />
+    <!-- Email EditText with Icon -->
+    <customview.EditTextEmail
+        android:id="@+id/editTextEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/labelEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_universal"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/labelUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextNama"
+        android:layout_marginTop="10dp" />
+    <!-- Username EditText with Icon -->
+    <customview.EditTextUsername
+        android:id="@+id/editTextUsename"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="Username"
+        app:layout_constraintTop_toBottomOf="@+id/labelUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_universal"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/labelpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsename"
+        app:layout_constraintStart_toStartOf="@+id/editTextNama"
+        android:layout_marginTop="10dp" />
+    <!-- Password EditText with Icon -->
+    <customview.EditTextPassword
+        android:id="@+id/editTextPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/labelpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_universal"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/labelspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextNama"
+        android:layout_marginTop="10dp" />
+    <!-- Role Spinner -->
+    <Spinner
+        android:id="@+id/list_role"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_background"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/labelspinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="R E G I S T E R"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/merahtua"
+        app:layout_constraintTop_toBottomOf="@+id/list_role"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
